@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b08a3df.chunk.css",
+    "main.js": "/static/js/main.ace1eea0.chunk.js",
+    "main.js.map": "/static/js/main.ace1eea0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e1e57d13.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e1e57d13.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.fdf433ab.chunk.js": "/static/js/2.fdf433ab.chunk.js",
+    "static/js/2.fdf433ab.chunk.js.map": "/static/js/2.fdf433ab.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.3b08a3df.chunk.css.map": "/static/css/main.3b08a3df.chunk.css.map",
+    "static/js/2.fdf433ab.chunk.js.LICENSE.txt": "/static/js/2.fdf433ab.chunk.js.LICENSE.txt",
+    "static/media/Binance.e30239a6.svg": "/static/media/Binance.e30239a6.svg",
+    "static/media/Meter.3212cb66.svg": "/static/media/Meter.3212cb66.svg",
+    "static/media/Pancake.1bd21d5d.svg": "/static/media/Pancake.1bd21d5d.svg",
+    "static/media/Voltswap.9f4986dd.png": "/static/media/Voltswap.9f4986dd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1e57d13.js",
+    "static/css/2.f4c56af9.chunk.css",
+    "static/js/2.fdf433ab.chunk.js",
+    "static/css/main.3b08a3df.chunk.css",
+    "static/js/main.ace1eea0.chunk.js"
+  ]
+}
