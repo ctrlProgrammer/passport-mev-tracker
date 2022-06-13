@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/passport-mevtracker/static/css/main.3b08a3df.chunk.css",
-    "main.js": "/passport-mevtracker/static/js/main.32c26c18.chunk.js",
-    "main.js.map": "/passport-mevtracker/static/js/main.32c26c18.chunk.js.map",
-    "runtime-main.js": "/passport-mevtracker/static/js/runtime-main.7a688a7e.js",
-    "runtime-main.js.map": "/passport-mevtracker/static/js/runtime-main.7a688a7e.js.map",
-    "static/css/2.f4c56af9.chunk.css": "/passport-mevtracker/static/css/2.f4c56af9.chunk.css",
-    "static/js/2.02eb8b63.chunk.js": "/passport-mevtracker/static/js/2.02eb8b63.chunk.js",
-    "static/js/2.02eb8b63.chunk.js.map": "/passport-mevtracker/static/js/2.02eb8b63.chunk.js.map",
-    "index.html": "/passport-mevtracker/index.html",
-    "static/css/2.f4c56af9.chunk.css.map": "/passport-mevtracker/static/css/2.f4c56af9.chunk.css.map",
-    "static/css/main.3b08a3df.chunk.css.map": "/passport-mevtracker/static/css/main.3b08a3df.chunk.css.map",
-    "static/js/2.02eb8b63.chunk.js.LICENSE.txt": "/passport-mevtracker/static/js/2.02eb8b63.chunk.js.LICENSE.txt",
-    "static/media/Binance.e30239a6.svg": "/passport-mevtracker/static/media/Binance.e30239a6.svg",
-    "static/media/Meter.3212cb66.svg": "/passport-mevtracker/static/media/Meter.3212cb66.svg",
-    "static/media/Pancake.1bd21d5d.svg": "/passport-mevtracker/static/media/Pancake.1bd21d5d.svg",
-    "static/media/Voltswap.9f4986dd.png": "/passport-mevtracker/static/media/Voltswap.9f4986dd.png"
+    "main.css": "/static/css/main.3b08a3df.chunk.css",
+    "main.js": "/static/js/main.d64e41a9.chunk.js",
+    "main.js.map": "/static/js/main.d64e41a9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e1e57d13.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e1e57d13.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.fdf433ab.chunk.js": "/static/js/2.fdf433ab.chunk.js",
+    "static/js/2.fdf433ab.chunk.js.map": "/static/js/2.fdf433ab.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.3b08a3df.chunk.css.map": "/static/css/main.3b08a3df.chunk.css.map",
+    "static/js/2.fdf433ab.chunk.js.LICENSE.txt": "/static/js/2.fdf433ab.chunk.js.LICENSE.txt",
+    "static/media/Binance.e30239a6.svg": "/static/media/Binance.e30239a6.svg",
+    "static/media/Meter.3212cb66.svg": "/static/media/Meter.3212cb66.svg",
+    "static/media/Pancake.1bd21d5d.svg": "/static/media/Pancake.1bd21d5d.svg",
+    "static/media/Voltswap.9f4986dd.png": "/static/media/Voltswap.9f4986dd.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7a688a7e.js",
+    "static/js/runtime-main.e1e57d13.js",
     "static/css/2.f4c56af9.chunk.css",
-    "static/js/2.02eb8b63.chunk.js",
+    "static/js/2.fdf433ab.chunk.js",
     "static/css/main.3b08a3df.chunk.css",
-    "static/js/main.32c26c18.chunk.js"
+    "static/js/main.d64e41a9.chunk.js"
   ]
 }
