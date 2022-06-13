@@ -422,23 +422,22 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
               //     " USD"
               // );
 
+              newTracks.unshift({
+                from: Routes[i].from,
+                to: Routes[i].to,
+                fromDex: Routes[i].fromDex,
+                toDex: Routes[i].toDex,
+                USDAmount: posibleBuyAmount,
+                buyAmount: posibleBuy.buyAmount,
+                buyGetAmount: posibleBuy.total,
+                sellAmount: posibleSell.sellAmount,
+                sellGetAmount: posibleSell.total,
+                success: false,
+                token: Routes[i].token,
+              });
+
               this.setState({
-                tracks: [
-                  ...newTracks,
-                  {
-                    from: Routes[i].from,
-                    to: Routes[i].to,
-                    fromDex: Routes[i].fromDex,
-                    toDex: Routes[i].toDex,
-                    USDAmount: posibleBuyAmount,
-                    buyAmount: posibleBuy.buyAmount,
-                    buyGetAmount: posibleBuy.total,
-                    sellAmount: posibleSell.sellAmount,
-                    sellGetAmount: posibleSell.total,
-                    success: false,
-                    token: Routes[i].token,
-                  },
-                ],
+                tracks: newTracks,
               });
             } else {
               // console.log(
@@ -453,23 +452,22 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
               //     " USD"
               // );
 
+              newTracks.unshift({
+                from: Routes[i].from,
+                to: Routes[i].to,
+                fromDex: Routes[i].fromDex,
+                toDex: Routes[i].toDex,
+                USDAmount: posibleBuyAmount,
+                buyAmount: posibleBuy.buyAmount,
+                buyGetAmount: posibleBuy.total,
+                sellAmount: posibleSell.sellAmount,
+                sellGetAmount: posibleSell.total,
+                success: true,
+                token: Routes[i].token,
+              });
+
               this.setState({
-                tracks: [
-                  ...newTracks,
-                  {
-                    from: Routes[i].from,
-                    to: Routes[i].to,
-                    fromDex: Routes[i].fromDex,
-                    toDex: Routes[i].toDex,
-                    USDAmount: posibleBuyAmount,
-                    buyAmount: posibleBuy.buyAmount,
-                    buyGetAmount: posibleBuy.total,
-                    sellAmount: posibleSell.sellAmount,
-                    sellGetAmount: posibleSell.total,
-                    success: true,
-                    token: Routes[i].token,
-                  },
-                ],
+                tracks: newTracks,
               });
             }
           }
