@@ -407,7 +407,7 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
 
             const newTracks = this.state.tracks;
 
-            if (newTracks.length > Routes.length - 1) newTracks.splice(0, 1);
+            if (newTracks.length > 50) newTracks.splice(0, 1);
 
             if (posibleBuyAmount >= posibleSell.total) {
               // console.log(
@@ -477,7 +477,7 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
       } catch (error) {
         console.log(error);
       }
-    }, 5000);
+    }, 7000);
   }
 
   private _updateBuyingAmount(value: string) {
