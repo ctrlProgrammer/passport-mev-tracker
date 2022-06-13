@@ -2,6 +2,7 @@
   "name": "front",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ctrlprogrammer.github.io/passport-mevtracker",
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,6 +16,7 @@
     "@types/react-redux": "^7.1.18",
     "chart.js": "^3.7.1",
     "events": "^3.3.0",
+    "gh-pages": "^4.0.0",
     "mathjax-full": "^3.2.0",
     "mathjax-react": "^1.0.6",
     "react": "^17.0.2",
@@ -30,6 +32,7 @@
     "web3": "^1.5.1"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
