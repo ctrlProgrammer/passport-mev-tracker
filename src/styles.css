@@ -778,6 +778,7 @@ button:disabled {
 
 .ct-track-list > div > div > small {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .ct-track-list > div.ct-valid > div > small {
@@ -785,7 +786,7 @@ button:disabled {
 }
 
 .ct-track-list > div.ct-invalid > div > small {
-  color: red;
+  color: rgb(255, 51, 51);
 }
 
 .ct-track-list > div > div img {
