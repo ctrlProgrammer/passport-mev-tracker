@@ -184,6 +184,13 @@ const Routes = [
     toDex: PossibleRouters.PANCAKE,
     token: PossibleTokens.AMPL,
   },
+  {
+    from: Networks.BSC,
+    to: Networks.METER,
+    fromDex: PossibleRouters.PANCAKE,
+    toDex: PossibleRouters.VOLTSWAP,
+    token: PossibleTokens.AMPL,
+  },
 ];
 
 interface RouterTrack {
