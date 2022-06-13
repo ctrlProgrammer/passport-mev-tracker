@@ -405,9 +405,9 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
               posibleBuy.total
             );
 
-            const newTracks = this.state.tracks;
+            let newTracks = this.state.tracks;
 
-            if (newTracks.length > 50) newTracks.splice(0, 1);
+            if (newTracks.length > 50) newTracks.pop();
 
             if (posibleBuyAmount >= posibleSell.total) {
               // console.log(
@@ -422,22 +422,22 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
               //     " USD"
               // );
 
-              newTracks.unshift({
-                from: Routes[i].from,
-                to: Routes[i].to,
-                fromDex: Routes[i].fromDex,
-                toDex: Routes[i].toDex,
-                USDAmount: posibleBuyAmount,
-                buyAmount: posibleBuy.buyAmount,
-                buyGetAmount: posibleBuy.total,
-                sellAmount: posibleSell.sellAmount,
-                sellGetAmount: posibleSell.total,
-                success: false,
-                token: Routes[i].token,
-              });
-
               this.setState({
-                tracks: newTracks,
+                tracks: [
+                  {
+                    from: Routes[i].from,
+                    to: Routes[i].to,
+                    fromDex: Routes[i].fromDex,
+                    toDex: Routes[i].toDex,
+                    USDAmount: posibleBuyAmount,
+                    buyAmount: posibleBuy.buyAmount,
+                    buyGetAmount: posibleBuy.total,
+                    sellAmount: posibleSell.sellAmount,
+                    sellGetAmount: posibleSell.total,
+                    success: false,
+                    token: Routes[i].token,
+                  },
+                ].concat(newTracks),
               });
             } else {
               // console.log(
@@ -452,22 +452,22 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
               //     " USD"
               // );
 
-              newTracks.unshift({
-                from: Routes[i].from,
-                to: Routes[i].to,
-                fromDex: Routes[i].fromDex,
-                toDex: Routes[i].toDex,
-                USDAmount: posibleBuyAmount,
-                buyAmount: posibleBuy.buyAmount,
-                buyGetAmount: posibleBuy.total,
-                sellAmount: posibleSell.sellAmount,
-                sellGetAmount: posibleSell.total,
-                success: true,
-                token: Routes[i].token,
-              });
-
               this.setState({
-                tracks: newTracks,
+                tracks: [
+                  {
+                    from: Routes[i].from,
+                    to: Routes[i].to,
+                    fromDex: Routes[i].fromDex,
+                    toDex: Routes[i].toDex,
+                    USDAmount: posibleBuyAmount,
+                    buyAmount: posibleBuy.buyAmount,
+                    buyGetAmount: posibleBuy.total,
+                    sellAmount: posibleSell.sellAmount,
+                    sellGetAmount: posibleSell.total,
+                    success: true,
+                    token: Routes[i].token,
+                  },
+                ].concat(newTracks),
               });
             }
           }
@@ -485,6 +485,7 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
   }
 
   render() {
+    console.log(this.state.tracks);
     return (
       <React.Fragment>
         <div className="ct-mev-container">
