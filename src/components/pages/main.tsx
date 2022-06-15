@@ -400,7 +400,7 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
 
             // console.log("Sell simulation on " + Routes[i].to + " using " + Routes[i].toDex);
 
-            const posibleSell = await this.state.routers[Routes[i].from][Routes[i].fromDex].simulateSell(
+            const posibleSell = await this.state.routers[Routes[i].to][Routes[i].toDex].simulateSell(
               Routes[i].token,
               posibleBuy.total
             );
