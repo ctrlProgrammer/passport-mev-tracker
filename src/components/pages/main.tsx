@@ -18,7 +18,7 @@ const PossibleRouters = {
 };
 
 const RPCUrls = {
-  [Networks.POLYGON]: "https://polygon-mainnet.g.alchemy.com/v2/IfBbeQVlWjzJGdhHsO_q3y7TvCgAg9aM",
+  [Networks.POLYGON]: "https://polygon-rpc.com",
   [Networks.METER]: "https://rpc-meter.jellypool.xyz",
   [Networks.BSC]: "https://bsc-dataseed.binance.org",
 };
@@ -56,16 +56,8 @@ const Tokens = {
     [PossibleRouters.QUICKSWAP]: {
       [PossibleTokens.FTB]: {
         address: "0xf305012ea754252184f1071c86ae99fac5b40320",
-        stablePath: [
-          "0xf305012ea754252184f1071c86ae99fac5b40320",
-          "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          BaseToken[Networks.POLYGON],
-        ],
-        inversePath: [
-          BaseToken[Networks.POLYGON],
-          "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "0xf305012ea754252184f1071c86ae99fac5b40320",
-        ],
+        stablePath: ["0xf305012ea754252184f1071c86ae99fac5b40320", "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270", BaseToken[Networks.POLYGON]],
+        inversePath: [BaseToken[Networks.POLYGON], "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270", "0xf305012ea754252184f1071c86ae99fac5b40320"],
         decimals: 18,
       },
     },
@@ -74,16 +66,8 @@ const Tokens = {
     [PossibleRouters.VOLTSWAP]: {
       [PossibleTokens.FTB]: {
         address: "0x6cfe9adad5215195c1aa9755daed29360e6ab986",
-        stablePath: [
-          "0x6cfe9adad5215195c1aa9755daed29360e6ab986",
-          "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3",
-          BaseToken[Networks.METER],
-        ],
-        inversePath: [
-          BaseToken[Networks.METER],
-          "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3",
-          "0x6cfe9adad5215195c1aa9755daed29360e6ab986",
-        ],
+        stablePath: ["0x6cfe9adad5215195c1aa9755daed29360e6ab986", "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3", BaseToken[Networks.METER]],
+        inversePath: [BaseToken[Networks.METER], "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3", "0x6cfe9adad5215195c1aa9755daed29360e6ab986"],
         decimals: 18,
       },
       [PossibleTokens.MTRG]: {
@@ -94,30 +78,14 @@ const Tokens = {
       },
       [PossibleTokens.AMPL]: {
         address: "0x1cf09d1b5da9d9d24365d87b932a7c4bd018a419",
-        stablePath: [
-          "0x1cf09d1b5da9d9d24365d87b932a7c4bd018a419",
-          "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3",
-          BaseToken[Networks.METER],
-        ],
-        inversePath: [
-          BaseToken[Networks.METER],
-          "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3",
-          "0x1cf09d1b5da9d9d24365d87b932a7c4bd018a419",
-        ],
+        stablePath: ["0x1cf09d1b5da9d9d24365d87b932a7c4bd018a419", "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3", BaseToken[Networks.METER]],
+        inversePath: [BaseToken[Networks.METER], "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3", "0x1cf09d1b5da9d9d24365d87b932a7c4bd018a419"],
         decimals: 9,
       },
       [PossibleTokens.MOVR]: {
         address: "0xb158870beB809Ad955Bf56065C5C10D7Fd957cC0",
-        stablePath: [
-          "0xb158870beB809Ad955Bf56065C5C10D7Fd957cC0",
-          "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3",
-          BaseToken[Networks.METER],
-        ],
-        inversePath: [
-          BaseToken[Networks.METER],
-          "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3",
-          "0xb158870beB809Ad955Bf56065C5C10D7Fd957cC0",
-        ],
+        stablePath: ["0xb158870beB809Ad955Bf56065C5C10D7Fd957cC0", "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3", BaseToken[Networks.METER]],
+        inversePath: [BaseToken[Networks.METER], "0x228ebbee999c6a7ad74a6130e81b12f9fe237ba3", "0xb158870beB809Ad955Bf56065C5C10D7Fd957cC0"],
         decimals: 9,
       },
     },
@@ -132,16 +100,8 @@ const Tokens = {
       },
       [PossibleTokens.AMPL]: {
         address: "0xDB021b1B247fe2F1fa57e0A87C748Cc1E321F07F",
-        stablePath: [
-          "0xDB021b1B247fe2F1fa57e0A87C748Cc1E321F07F",
-          "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-          BaseToken[Networks.BSC],
-        ],
-        inversePath: [
-          BaseToken[Networks.BSC],
-          "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
-          "0xDB021b1B247fe2F1fa57e0A87C748Cc1E321F07F",
-        ],
+        stablePath: ["0xDB021b1B247fe2F1fa57e0A87C748Cc1E321F07F", "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", BaseToken[Networks.BSC]],
+        inversePath: [BaseToken[Networks.BSC], "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", "0xDB021b1B247fe2F1fa57e0A87C748Cc1E321F07F"],
         decimals: 9,
       },
     },
@@ -238,15 +198,10 @@ class UniSwapV2 {
 
     if (allTokens.length > 0) {
       for (let i = 0; i < allTokens.length; i++) {
-        const amountsOut = await this.contract.methods
-          .getAmountsOut(Web3.utils.toWei("1", "ether"), this.tokens[allTokens[i]].stablePath)
-          .call();
+        const amountsOut = await this.contract.methods.getAmountsOut(Web3.utils.toWei("1", "ether"), this.tokens[allTokens[i]].stablePath).call();
 
         if (Array.isArray(amountsOut)) {
-          prices[allTokens[i]] = Web3.utils.fromWei(
-            String(amountsOut[this.tokens[allTokens[i]].stablePath.length - 1]),
-            "ether"
-          );
+          prices[allTokens[i]] = Web3.utils.fromWei(String(amountsOut[this.tokens[allTokens[i]].stablePath.length - 1]), "ether");
         }
       }
 
@@ -283,10 +238,7 @@ class UniSwapV2 {
   async simulateSell(token: string, amount: number) {
     const out = await this._getAmountsOut(
       this.tokens[token].stablePath,
-      Web3.utils.toWei(
-        amount.toFixed(18 - this.tokens[token].decimals).toString(),
-        UtilsHelpers.getDecimalsUnit(18 - this.tokens[token].decimals)
-      )
+      Web3.utils.toWei(amount.toFixed(18 - this.tokens[token].decimals).toString(), UtilsHelpers.getDecimalsUnit(18 - this.tokens[token].decimals))
     );
 
     if (Array.isArray(out) && out.length > 0) {
@@ -359,10 +311,7 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
             this.state.providers[network],
             network,
             networkRouters[i],
-            new this.state.providers[network].eth.Contract(
-              UniswapV2Abi.abi,
-              this.state.routersAddresses[network][networkRouters[i]]
-            ),
+            new this.state.providers[network].eth.Contract(UniswapV2Abi.abi, this.state.routersAddresses[network][networkRouters[i]]),
             this.state.tokens[network][networkRouters[i]]
           );
         }
@@ -393,17 +342,11 @@ export class MainPage extends React.PureComponent<MainComponentProps, MainCompon
             //     " USD"
             // );
 
-            const posibleBuy = await this.state.routers[Routes[i].from][Routes[i].fromDex].simulateBuy(
-              Routes[i].token,
-              posibleBuyAmount
-            );
+            const posibleBuy = await this.state.routers[Routes[i].from][Routes[i].fromDex].simulateBuy(Routes[i].token, posibleBuyAmount);
 
             // console.log("Sell simulation on " + Routes[i].to + " using " + Routes[i].toDex);
 
-            const posibleSell = await this.state.routers[Routes[i].to][Routes[i].toDex].simulateSell(
-              Routes[i].token,
-              posibleBuy.total
-            );
+            const posibleSell = await this.state.routers[Routes[i].to][Routes[i].toDex].simulateSell(Routes[i].token, posibleBuy.total);
 
             let newTracks = this.state.tracks;
 
